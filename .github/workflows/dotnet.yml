@@ -19,4 +19,4 @@ jobs:
     - name: Build
       run: dotnet build WebBMI/WebBMI.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test WebBMI/WebBMI.sln --no-build --verbosity normal
+      run: dotnet test WebBMI/WebBMI.sln --configuration Release --no-build --verbosity normal
