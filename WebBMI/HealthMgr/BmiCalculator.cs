@@ -20,8 +20,8 @@ namespace HealthMgr
         public float Calculate()
         {
             float result = 0;
-            //將float改成int試試看
-            float height = (int)Height / 100;
+            // 避免整數除法造成計算錯誤，將 Height 轉為 float
+            float height = (float)Height / 100;
             result = Weight / (height * height);
 
             return result;
